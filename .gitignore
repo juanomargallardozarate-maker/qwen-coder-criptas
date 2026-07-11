@@ -1,32 +1,29 @@
 ```
-# Laravel-specific ignores
+# Dependency directories
 vendor/
 composer.lock
+
+# Environment
 .env
+.env.local
 .env.*
-!env.example
 
-# Build and cache directories
-bootstrap/cache/
-storage/logs/
-storage/framework/cache/
-storage/framework/sessions/
-storage/framework/views/
+# Logs and temp files
+*.log
+*.tmp
 
-# IDE and editor files
+# Editor/IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
 
 # OS generated files
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-
-# Temporary files
-*.tmp
+# PHP specific
+*.php~
+**/vendor/**
+!vendor/**
 ```
