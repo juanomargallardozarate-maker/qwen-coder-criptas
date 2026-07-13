@@ -1,29 +1,46 @@
 ```
-# Dependency directories
+# Dependencies
+node_modules/
 vendor/
-composer.lock
 
-# Environment
-.env
-.env.local
-.env.*
-
-# Logs and temp files
-*.log
-*.tmp
-
-# Editor/IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS generated files
-.DS_Store
-Thumbs.db
+# Build artifacts
+public/build/
+public/css/app.css
+public/js/app.js
+dist/
+build/
 
 # PHP specific
 *.php~
 **/vendor/**
 !vendor/**
+!/vendor/autoload.php
+
+# Laravel specific
+bootstrap/cache/
+storage/logs/
+storage/framework/
+!.env
+.env
+.env.*
+!.env.example
+!.env.testing
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+storage/logs/*.log
+
+# Temp files
+*.tmp
+tmp/
 ```
